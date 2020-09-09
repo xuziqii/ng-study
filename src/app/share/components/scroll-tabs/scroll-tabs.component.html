@@ -1,0 +1,15 @@
+<ul>
+  <li *ngFor="let item of menus; let i = index;">
+    <a
+      [class.active-menu]="selectedMenu === i"
+      (click)="handleMenuClick(i)"
+    >
+      {{ item.title }}
+    </a>
+    <span class="active-tab" *ngIf="selectedMenu === i"></span>
+    <!-- <span class="active-tab" *ngIf="selectedMenu == i else elseTemp"></span>
+    <ng-template #elseTemp>
+      hello
+    </ng-template> -->
+  </li>
+</ul>

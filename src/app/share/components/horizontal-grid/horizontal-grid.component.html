@@ -1,0 +1,8 @@
+<p>双向绑定原理</p>
+<input [value]="username" (input)="username = $event.target.value" />
+<span>hello,{{username}}</span>
+
+<!-- <p>双向绑定语法糖</p>
+<input [(ngModel)]="username" />
+<span>hello,{{username}}</span> -->
+

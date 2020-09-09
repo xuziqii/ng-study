@@ -1,0 +1,9 @@
+<app-scroll-tabs [menus]="topMenus" (selectTab)="handleSelectTab($event)"></app-scroll-tabs>
+
+<app-image-slider></app-image-slider>
+
+<app-horizontal-grid [(username)]="username"></app-horizontal-grid>
+
+<app-horizontal-grid (username)="username" (usernameChange)="username = $event"></app-horizontal-grid>
+
+<p>{{username}} </p>
