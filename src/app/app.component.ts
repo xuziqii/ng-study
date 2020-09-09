@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { TopMenu, Emoji, Confirmable } from './share';
 
 @Component({
   selector: 'app-root',
@@ -6,7 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'pinduoduo';
+  @Emoji() title = 'pinduoduo';
   username = '';
   topMenus: TopMenu[] = [
     {
@@ -31,6 +32,7 @@ export class AppComponent {
     },
   ];
 
+  @Confirmable('真的要点击吗')
   handleSelectTab (topMenu: TopMenu) {
     console.log(topMenu);
   }
