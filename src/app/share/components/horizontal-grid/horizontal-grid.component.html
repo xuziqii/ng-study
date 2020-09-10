@@ -6,8 +6,7 @@
 <input [(ngModel)]="username" />
 <span>hello,{{username}}</span> -->
 
-<div appGirdItem *ngFor="let item of imgList" [placeItems]="'end'">
-  <img appGirdItemImage="3rem" [fitMode]="'fill'" [src]="item.url"/>
-  <span appGirdItemTitle>{{item.title}}</span>
-</div>
 
+<ng-content select='span'></ng-content>
+<ng-content select='[appGirdItem]'></ng-content>
+<ng-content select='.test'></ng-content>

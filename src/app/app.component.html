@@ -2,10 +2,21 @@
 
 <app-image-slider></app-image-slider>
 
-<app-horizontal-grid [imgList]="imgList"></app-horizontal-grid>
 <app-horizontal-grid [(username)]="username"></app-horizontal-grid>
 
 <app-horizontal-grid (username)="username" (usernameChange)="username = $event"></app-horizontal-grid>
 
 <p>{{username}} </p>
 <p>{{title}} </p>
+
+
+<app-horizontal-grid>
+<div>hello from ng content</div>
+<span class="test">hello from class="test"</span>
+
+<div appGirdItem *ngFor="let item of imgList" [placeItems]="'end'">
+  <img appGirdItemImage="3rem" [fitMode]="'fill'" [src]="item.url"/>
+  <span appGirdItemTitle>{{item.title}}</span>
+</div>
+
+</app-horizontal-grid>

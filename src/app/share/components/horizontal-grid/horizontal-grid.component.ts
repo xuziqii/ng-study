@@ -1,9 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
-export interface ImgList {
-  url: string
-  title: string
-}
 @Component({
   selector: 'app-horizontal-grid',
   templateUrl: './horizontal-grid.component.html',
@@ -17,8 +13,6 @@ export class HorizontalGridComponent implements OnInit {
 
   ngOnInit() {
   }
-
-  @Input() imgList: ImgList[] = []
 
   @Input()
   public get username () {

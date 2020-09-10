@@ -1,5 +1,10 @@
 import { Component } from '@angular/core';
-import { TopMenu, Emoji, Confirmable, ImgList } from './share';
+import { TopMenu, Emoji, Confirmable } from './share';
+
+export interface ImgList {
+  url: string
+  title: string
+}
 
 @Component({
   selector: 'app-root',
