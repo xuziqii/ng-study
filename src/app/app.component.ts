@@ -14,6 +14,7 @@ export interface ImgList {
 export class AppComponent {
   @Emoji() title = 'pinduoduo';
   username = '';
+  desc = 'desc';
   topMenus: TopMenu[] = [
     {
       title: '热门',

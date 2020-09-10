@@ -1,12 +1,3 @@
-<p>双向绑定原理</p>
-<input [value]="username" (input)="username = $event.target.value" />
-<span>hello,{{username}}</span>
-
-<!-- <p>双向绑定语法糖</p>
-<input [(ngModel)]="username" />
-<span>hello,{{username}}</span> -->
-
-
 <ng-content select='span'></ng-content>
 <ng-content select='[appGirdItem]'></ng-content>
 <ng-content select='.test'></ng-content>

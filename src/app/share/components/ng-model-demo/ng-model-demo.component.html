@@ -1,0 +1,25 @@
+<p>双向绑定</p>
+<div>
+  <p> 原理 </p>
+  <input [value]="username" (input)="username = $event.target.value"/>
+  <span> {{ username }}</span>
+</div>
+
+<div>
+  <p> ngModel 写法 </p>
+  <input [ngModel]="username" (ngModelChange)="username = $event"/>
+  <span> {{ username }}</span>
+</div>
+
+<div>
+  <p> 语法糖 </p>
+  <input [(ngModel)]="username"/>
+  <span>{{ username }}</span>
+</div>
+
+<div>
+  <p>双向绑定对外暴露的属性</p>
+  <input [value]="desc" (input)="desc = $event.target.value"/>
+  <!-- <input [(ngModel)]="desc" /> -->
+  <span>{{ desc }}</span>
+</div>
