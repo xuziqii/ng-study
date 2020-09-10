@@ -7,7 +7,7 @@
 <span>hello,{{username}}</span> -->
 
 <div appGirdItem *ngFor="let item of imgList" [placeItems]="'end'">
-  <img [appGirdItemImage]="'2rem'" [fitMode]="'fill'" [src]="item.url"/>
+  <img appGirdItemImage="3rem" [fitMode]="'fill'" [src]="item.url"/>
   <span appGirdItemTitle>{{item.title}}</span>
 </div>
 
