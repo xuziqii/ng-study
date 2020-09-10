@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { TopMenu, Emoji, Confirmable } from './share';
+import { TopMenu, Emoji, Confirmable, ImgList } from './share';
 
 @Component({
   selector: 'app-root',
@@ -36,4 +36,19 @@ export class AppComponent {
   handleSelectTab (topMenu: TopMenu) {
     console.log(topMenu);
   }
+
+  imgList: ImgList[] = [
+    {
+      url: '../assets/gird-imgs/bmw.jpg',
+      title: '爆款',
+    },
+    {
+      url: '../assets/gird-imgs/neteasy.jpg',
+      title: '低价',
+    },
+    {
+      url: '../assets/gird-imgs/recycle.jpg',
+      title: '经典',
+    }
+  ]
 }
