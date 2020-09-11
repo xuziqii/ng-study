@@ -3,11 +3,12 @@ import { NgModule } from '@angular/core';
 import { HomeRoutingModule } from './home-routing.module';
 
 import { ShareModule } from '../share'
-import { HomeContainerComponent } from './components'
+import { HomeContainerComponent, HomeDetailComponent } from './components'
 
 @NgModule({
   declarations: [
-    HomeContainerComponent
+    HomeContainerComponent,
+    HomeDetailComponent,
   ],
   imports: [
     HomeRoutingModule,
