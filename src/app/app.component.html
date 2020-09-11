@@ -1,16 +1,1 @@
-<app-scroll-tabs [menus]="topMenus" (selectTab)="handleSelectTab($event)"></app-scroll-tabs>
-
-<app-image-slider></app-image-slider>
-
-<app-horizontal-grid>
-  <div>hello from ng content</div>
-  <span class="test">hello from class="test"</span>
-  <div appGirdItem *ngFor="let item of imgList" [placeItems]="'end'">
-    <img appGirdItemImage="3rem" [fitMode]="'fill'" [src]="item.url"/>
-    <span appGirdItemTitle>{{item.title}}</span>
-  </div>
-</app-horizontal-grid>
-
-
-<app-ng-model-demo [(desc)]="desc"></app-ng-model-demo>
-<p>{{desc}}</p>
+<router-outlet></router-outlet>
